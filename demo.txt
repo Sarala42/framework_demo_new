@@ -1,0 +1,24 @@
+hybrid framework - data driven framework + pytest framework
+design pattern - POM(page object model)
+
+structure of the framework
+--------------------------
+1. source_code/src/pom/pages (package)
+2. tests (package)
+3. utilities (package)
+4. file library (package)
+5. reports (package)
+6. requirements.txt - names of all the pluggins
+
+2. generating reports
+    -> pip install pytest-html
+    -> pytest test_file.py -vs --html="reportname.html"    #stores in current directory
+    -> pytest test_file.py -vs --html="path(C:\Users\saral\PycharmProjects\framework_demo_new\reports)\reportname.html"
+
+(to import file from one folder to another --init--.py package shd be thr complesory and its inbuilt file in python package)
+python packages - __init__.py file is present
+                - should be created to store python file
+directory - normal folder without any init file
+          - can be created for storing any files other than .py files
+
+ src- source code & test are used for working flatform

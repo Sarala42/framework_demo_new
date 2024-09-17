@@ -1,0 +1,34 @@
+initial steps
+	-------------
+	1. download and install git
+	2. create a project in pycharm (eg: project1)
+	3. Sign in to github and create an empty repository in github with
+	 the same name as your project or different name .
+	next steps
+	----------
+	git --version -> checks if the git is installed properly
+	git init -> create an empty git repository
+	configuring user name and mail to git
+	---------------------------------------
+	git config --global user.name "username"
+	git config --global user.email "email_id"
+	git config --list -> check the configuration
+	git commands
+	-------------
+	1. git status -> to get the current status of the project
+	2. git add filename.py -> add the file to staging area making it a tracked file
+	 git add file1 file2 file3 -> adds multiple files
+	 adds all the untracked files to staging area
+	 git add *
+	 git add .
+	3. git rm --cached filename -> unstages/ removes the file from staging area(works only if the file is newly added)
+	 git restore --staged filename
+	4. git rm --cached -r foldername -> unstages/ removes the entire folder from staging area
+	ignoring a file/folder from being visible in untracked area -> create a file named .gitignore
+	5. git commit -m "message" -> commits the files to local repository
+	6. git log -> detailed information about the commits
+	 git log --oneline
+	7. git remote add variable_name(origin) url -> giving url some other name
+	(If you are being redirected to github authorize page, then click on
+	authorize and the rest will be same as here)
+	8. git push variable_name(origin) branch(master)
