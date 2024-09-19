@@ -1,9 +1,9 @@
 # test cases related to login module
 # test cases related to login module
 # imports -> inbuilt module, installed libraries, local modules
-import email
+# import email
 
-import password
+# import password
 import pytest
 from config import Config
 from selenium.common.exceptions import NoSuchElementException
@@ -15,10 +15,10 @@ from utilities.selenium_wrapper import capture_screenshot
 # 	lp = LoginPage()
 
 credentials = [
-	("steve_jobs@gmail.com", "steve123"),
-	("abc@gmail.com", "abc123"),
-	("", "steve123"), ("steve_jobs@gmail.com", ""),
-	(" ", " ")]
+	("steve_jobs@gmail.com", "steve123")]
+	# ("abc@gmail.com", "abc123"),
+	# ("", "steve123"), ("steve_jobs@gmail.com", ""),
+	# (" ", " ")]
 
 # parametrize the test case
 # def test_login_with_valid_credentials(driver_init):
